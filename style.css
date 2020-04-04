@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    text-rendering: optimizeLegibility;
+    font-family: 'Vollkorn', serif;
+}
+
+a {
+    color: #000 !important;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed!important;
+    z-index: 2;
+    background-color: #dcccbd!important;
+    
+}
+
+ .navbar-nav .nav-link {
+    color: #000 !important;
+    transition: all 1s;
+}
+
+ .navbar-nav .nav-link:hover {
+    background: #ce7f5c;
+    color: #000 !important;
+    border-radius: 3px;
+}
+
+button .navbar-toggler {
+    color: #005cbf !important;
+}
+
+#home .container-fluid {
+    min-height: 100vh;
+    background: url("img/back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.heading .hh1 {
+    font-size: 10vw;
+    color: #fff;
+    text-shadow: 3px 5px 6px #000;
+    max-width: 100%;
+}
+
+.heading .hh3 {
+    color: white;
+    text-shadow: 3px 5px 6px #5a6268;
+    max-width: 100%;
+    font-size: 6vw;
+}
+
+@media screen and (min-width:1024px) {
+    .heading .hh1 {
+        font-size: 10vw;
+/*        color: #dcccbd;*/
+        text-shadow: 3px 5px 6px #5a6268;
+        max-width: 100%;
+    }
+
+    .heading .hh3 {
+        color: white;
+        text-shadow: 3px 5px 6px #5a6268;
+        max-width: 100%;
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .heading .hh1 {
+        font-size: 17vw;
+/*       color: #dcccbd;*/
+        text-shadow: 3px 5px 6px #5a6268;
+        max-width: 100%;
+    }
+
+    .heading .hh3 {
+        color: white;
+        text-shadow: 3px 5px 6px #5a6268;
+        max-width: 100%;
+        font-size: 10vw;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .heading .hh1 {
+        font-size: 22vw;
+/*        color: #dcccbd;*/
+        text-shadow: 3px 5px 6px #5a6268;
+        max-width: 100%;
+    }
+
+    .heading .hh3 {
+        color: white;
+        text-shadow: 3px 5px 6px #5a6268;
+        max-width: 100%;
+        font-size: 11vw;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    .heading .hh1 {
+        font-size: 22vw;
+/*        color: #dcccbd;*/
+        text-shadow: 3px 5px 6px #5a6268;
+        max-width: 100%;
+    }
+
+    .heading .hh3 {
+        color: white;
+        text-shadow: 3px 5px 6px #1d252c;
+        max-width: 100%;
+        font-size: 11vw;
+    }
+}
+
+.abbox {
+    align-self: center;
+}
+
+
+@media screen and (min-width:1025px) {
+    .team {
+        text-align: center !important;
+    }
+
+    .ah2 {
+        line-height: 65px;
+        font-size: 50px;
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .team {
+        text-align: center !important;
+    }
+
+    .ah2 {
+        line-height: 50px;
+        font-size: 40px;
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .team {
+        text-align: center !important;
+    }
+
+    .ah2 {
+        text-align: center !important;
+        line-height: 50px;
+        font-size: 30px;
+        width: 100%;
+        padding: 30px 0px;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .team {
+        text-align: center !important;
+    }
+
+    .ah2 {
+        line-height: 40px;
+        font-size: 27px;
+        width: 100%;
+        padding: 30px 0px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .team .imgteam {
+
+        width: 300px;
+        height: auto;
+    }
+
+    .ah2 {
+        line-height: 20px;
+        font-size: 17px;
+        width: 100%;
+        padding: 30px 0px;
+    }
+
+}
+
+
+.faabout {
+    justify-content: center;
+    text-align: center;
+    padding: 0 0 7px 0;
+}
+
+.aboutsep {
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    height: 450px;
+    position: relative;
+    background-image: url("img/about-sep.jpg");
+    margin: 15px 0 0 0;
+    display: flex;
+}
+
+.h2port {
+    justify-content: center;
+    text-align: center;
+}
+
+.imgport {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgport img {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+.imgport:hover .img1 {
+    opacity: 0;
+}
+
+.search-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    transition: margin 2s ease-in-out, color 0.5s ease-in-out, opacity 0.75s ease-in-out;
+    margin-top: -50%;
+    opacity: 0;
+    width: 100%;
+}
+
+.imgport:hover .search-link {
+    margin-top: 0;
+    opacity: 1;
+
+}
+
+.h2can {
+    justify-content: center;
+    text-align: center;
+}
+
+.colposition {
+    justify-content: center;
+    text-align: center;
+}
+
+.colposition:hover {
+    background: linear-gradient(rgba(220, 204, 189, 0.9), rgba(255, 255, 255, 0.9));
+    border-radius: 3px;
+   
+}
+
+.facolor {
+    margin: 17px 0;
+}
+
+.cansep {
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    height: 450px;
+    position: relative;
+    background-image: url("img/portfolio-sep.jpg");
+    margin: 15px 0 0 0;
+    display: flex;
+}
+
+.h2services {
+    justify-content: center;
+    text-align: center;
+}
+
+.textser {
+    float: left;
+}
+
+.carouselrev {
+    background: linear-gradient(rgba(220, 204, 189, 0.9), rgba(255, 255, 255, 0.9), rgba(220, 204, 189, 0.9));
+   
+}
+
+.carouseltext {
+    min-height: 500px!important;
+}
+
+
+.alink {
+    color: blue!important;
+}
+
+.h2cont {
+   justify-content: center;
+    text-align: center; 
+}
+
+.btncolor {
+    background-color: #ce7f5c;
+    color: #fff;
+}
+
+.copycolor {
+    background: #dcccbd;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
